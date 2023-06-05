@@ -9,7 +9,7 @@ namespace FreshMvvmApp
     public partial class App : Application
     {
         public App()
-        { 
+        {
             MainPage = new NavigationPage(new LaunchPage(this));
         }
 
@@ -34,6 +34,9 @@ namespace FreshMvvmApp
             var tabbedNavigation = new FreshTabbedNavigationContainer();
             tabbedNavigation.AddTab<ContactListPageModel>("Contacts", "contacts.png", null);
             tabbedNavigation.AddTab<QuoteListPageModel>("Quotes", "document.png", null);
+            tabbedNavigation.AddTab<TestPage1Model>("test 3", "document.png", null);
+            tabbedNavigation.AddTab<TestPage2Model>("test 4", "document.png", null);
+            tabbedNavigation.AddTab<TestPage3Model>("test 5", "document.png", null);
             MainPage = tabbedNavigation;
         }
 
@@ -63,7 +66,7 @@ namespace FreshMvvmApp
 
             masterDetailsMultiple.Flyout = masterPageArea; //set the first navigation container to the Master
 
-            //we setup the second navigation container with the QuoteList 
+            //we setup the second navigation container with the QuoteList
             var quoteListPage = FreshPageModelResolver.ResolvePageModel<QuoteListPageModel>();
             quoteListPage.Title = "Quote List";
             //we setup the second navigation container with name DetailPageArea

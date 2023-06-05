@@ -12,9 +12,9 @@ namespace FreshMvvmApp
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-            
+
             builder
-                .UseMauiApp<App>()                
+                .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -35,6 +35,10 @@ namespace FreshMvvmApp
             builder.Services.Add(ServiceDescriptor.Transient<ModalPageModel, ModalPageModel>());
             builder.Services.Add(ServiceDescriptor.Transient<QuoteListPageModel, QuoteListPageModel>());
             builder.Services.Add(ServiceDescriptor.Transient<QuotePageModel, QuotePageModel>());
+            builder.Services.Add(ServiceDescriptor.Transient<TestPage1Model, TestPage1Model>());
+            builder.Services.Add(ServiceDescriptor.Transient<TestPage2Model, TestPage2Model>());
+            builder.Services.Add(ServiceDescriptor.Transient<TestPage3Model, TestPage3Model>());
+
 
             MauiApp mauiApp = builder.Build();
 
