@@ -5,9 +5,9 @@ using Microsoft.Maui;
 
 namespace FreshMvvmApp
 {
-	public partial class TestPage1 : BasePage
+	public partial class Test1Page : BasePage
 	{
-		public TestPage1 ()
+		public Test1Page ()
 		{
 			InitializeComponent ();
 		}

@@ -39,7 +39,9 @@ namespace FreshMvvm.Maui
             if (pageType == null)
                 throw new Exception (name + " not found");
 
-            var page = (Page)DependancyService.Resolve(pageType);
+            var page1 = DependancyService.Resolve(pageType);
+
+            var page = (Page)page1;
 
             BindingPageModel(data, page, pageModel);
 

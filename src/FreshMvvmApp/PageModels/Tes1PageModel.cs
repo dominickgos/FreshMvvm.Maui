@@ -5,9 +5,9 @@ using System;
 
 namespace FreshMvvmApp
 {
-    public class TestPage1Model : FreshBasePageModel
+    public class Test1PageModel : FreshBasePageModel
     {
-        public TestPage1Model ()
+        public Test1PageModel()
         {
         }
     }

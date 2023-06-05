@@ -34,9 +34,11 @@ namespace FreshMvvmApp
             var tabbedNavigation = new FreshTabbedNavigationContainer();
             tabbedNavigation.AddTab<ContactListPageModel>("Contacts", "contacts.png", null);
             tabbedNavigation.AddTab<QuoteListPageModel>("Quotes", "document.png", null);
-            tabbedNavigation.AddTab<TestPage1Model>("test 3", "document.png", null);
-            tabbedNavigation.AddTab<TestPage2Model>("test 4", "document.png", null);
-            tabbedNavigation.AddTab<TestPage3Model>("test 5", "document.png", null);
+            tabbedNavigation.AddTab<Test1PageModel>("test 3", "document.png", null);
+            tabbedNavigation.AddTab<QuoteListPageModel>("Quotes", "document.png", null);
+            tabbedNavigation.AddTab<ContactListPageModel>("Contacts", "contacts.png", null);
+            //    tabbedNavigation.AddTab<TestPage2Model>("test 4", "document.png", null);
+            //  tabbedNavigation.AddTab<TestPage3Model>("test 5", "document.png", null);
             MainPage = tabbedNavigation;
         }
 
